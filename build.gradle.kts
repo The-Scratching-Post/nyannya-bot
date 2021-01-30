@@ -93,10 +93,6 @@ tasks {
         }
     }
 
-    processResources {
-        exclude("application*.yml")
-    }
-
     shadowJar {
         mergeServiceFiles()
     }
