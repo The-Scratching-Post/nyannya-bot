@@ -1,0 +1,29 @@
+micronaut:
+  application:
+    name: The Scratching Post
+
+discord:
+  token:
+  command:
+    prefix:
+    ownerId:
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/scratching_post
+    driverClassName: org.postgresql.Driver
+    username: scratching_post
+    password: ''
+    dialect: POSTGRES
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        bytecode:
+          provider: none
+
+flyway:
+  datasources:
+    default:
+      enabled: true
